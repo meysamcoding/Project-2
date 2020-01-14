@@ -1,6 +1,6 @@
 var express = require("express");
  
-const path           = require('path');
+const path = require('path');
 
 // Create an instance of the express app.
  
