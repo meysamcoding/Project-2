@@ -29,10 +29,12 @@ app.use(express.static("public"));
 
 // Routes
 // =============================================================
+ 
 app.get("/", function(req, res) {
-  res.render("index");
-});
+   
 
+    res.render("index");
+  });
  
 
 // Here we introduce HTML routing to serve different HTML files
@@ -41,8 +43,8 @@ app.get("/", function(req, res) {
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
- 
+//db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
- 
+//});
