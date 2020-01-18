@@ -29,14 +29,11 @@ app.use(express.static("public"));
 
 // Routes
 // =============================================================
- 
 app.get("/", function(req, res) {
-   
-
-    res.render("index");
-  });
+  res.render("index");
+});
+  
  
-
 // Here we introduce HTML routing to serve different HTML files
  
 
