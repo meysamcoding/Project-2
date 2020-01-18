@@ -8,12 +8,21 @@
         <h5>Photo of me:</h5>
         <div class="fakeimg" style="height:200px;">Image</div>
         <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        {{!-- Side bar --}}
         <h3>More Text</h3>
         <p>Lorem ipsum dolor sit ame.</p>
-        <div class="fakeimg" style="height:20px;"></div><br>
-        <div class="fakeimg" style="height:60px;">Image</div><br>
-        <div class="fakeimg" style="height:60px;">Image</div>
+    <div class="sidebar">
+    <div style="position:relative">
+        <p>
+        <img src="img/sidebar-img.jpg" style="position:relative; height:240px; border: 2px solid black"/>
+        </p>
+        <p>
+        <img src="img/sidebar-img2.jpg" style="position:absolute; height:240px; border: 2px solid black"/>
+        </p>
     </div>
+    </div>    
+    </div>
+
     <div class="main">
         <h2>TITLE HEADING</h2>
         <h5>Title description, Dec 7, 2017</h5>
@@ -30,21 +39,33 @@
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
+    <div class="numbertext">1 / 5</div>
     <img src="img/gallery.jpg" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="img/IMG_20200106_155937_066.jpg" style="width:100%">
+    <div class="numbertext">2 / 5</div>
+    <img src="img/gallery-img3.jpg" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
+    <div class="numbertext">3 / 5</div>
     <img src="img/IMG_20200106_160300_514.jpg" style="width:100%">
     <div class="text">Caption Three</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="img/gallery1.jpg" style="width:100%">
+    <div class="text">Caption Four</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="img/gallery-img2.jpg" style="width:100%">
+    <div class="text">Caption Five</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -58,6 +79,9 @@
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+
 </div>
 </div>
 </div>
