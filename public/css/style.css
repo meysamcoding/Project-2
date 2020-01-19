@@ -406,3 +406,7 @@ footer {
   position: absolute;
   display: inline-block;
 }
+.gallery {
+  background-color: #666;
+  color: white;
+}

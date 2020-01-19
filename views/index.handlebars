@@ -32,6 +32,8 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             ullamco.</p>
         <br>
+
+        <div class="gallery">
         <h2>Gallery Section</h2>
         <h5>Come and check us out!</h5>
     <!-- Slideshow container -->
@@ -41,31 +43,26 @@
   <div class="mySlides fade">
     <div class="numbertext">1 / 5</div>
     <img src="img/gallery.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 5</div>
     <img src="img/gallery-img3.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 5</div>
     <img src="img/IMG_20200106_160300_514.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">4 / 5</div>
     <img src="img/gallery1.jpg" style="width:100%">
-    <div class="text">Caption Four</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">5 / 5</div>
     <img src="img/gallery-img2.jpg" style="width:100%">
-    <div class="text">Caption Five</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -75,13 +72,13 @@
 <br>
 
 <!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
 </div>
 </div>
 </div>
@@ -89,6 +86,16 @@
 <script>
 var slideIndex = 0;
 showSlides();
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
 function showSlides() {
   var i;
