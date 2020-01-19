@@ -31,11 +31,12 @@ app.use(express.static("public"));
 // =============================================================
  
 app.get("/", function(req, res) {
-   
-
     res.render("index");
   });
- 
+  app.get("/#", function(req, res) {
+    res.render("layouts/contact");
+  });
+
 
 // Here we introduce HTML routing to serve different HTML files
  
