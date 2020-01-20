@@ -13,11 +13,11 @@
         <p>Lorem ipsum dolor sit ame.</p>
     <div class="sidebar">
     <div style="position:relative">
-        <p>
+        <p id="imagesidebar">
         <img src="img/sidebar-img.jpg" style="position:relative; height:240px; border: 2px solid black"/>
         </p>
-        <p>
-        <img src="img/sidebar-img2.jpg" style="position:absolute; height:240px; border: 2px solid black"/>
+        <p id="imagesidebar">
+        <img src="img/sidebar-img2.jpg" style="position:absolute; height:180px; border: 2px solid black"/>
         </p>
     </div>
     </div>    
@@ -106,7 +106,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 1000); // Change image every 2 seconds
 }
 </script>
 

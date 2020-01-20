@@ -228,6 +228,9 @@ footer {
   }
 }
 @media only screen and (max-width: 568px) {
+  #imagesidebar{
+    display: none;
+  }
   main {
     font-size: 5em
   }
@@ -271,6 +274,7 @@ footer {
   }
 }
 @media only screen and (max-width: 480px) {
+ 
   .navbar a {
     float: none;
     width: 100%;
