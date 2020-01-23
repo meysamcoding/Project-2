@@ -1,5 +1,5 @@
 var express = require("express");
- 
+const exphbs = require('express-handlebars');
 const path = require('path');
 
 // Create an instance of the express app.
@@ -13,7 +13,7 @@ var PORT = process.env.PORT || 8080;
 
 // Requiring our models for syncing
 app.set('views', path.join(__dirname, 'views'));
-const exphbs = require('express-handlebars');
+
 app.engine('handlebars', exphbs({
     defaultLayout: 'main'
 }));
