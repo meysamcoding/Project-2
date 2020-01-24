@@ -49,7 +49,7 @@ $(document).ready(function() {
     // blogDiv
 
     function initializeRows() {
-      blogContainer.empty();
+      blogDiv.empty();
       const postsToAdd = [];
       for (var i = 0; i < posts.length; i++) {
         postsToAdd.push(createNewRow(posts[i]));
