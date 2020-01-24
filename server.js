@@ -1,6 +1,8 @@
 var express = require("express");
 const exphbs = require('express-handlebars');
 const path = require('path');
+const db = require("./models");
+const sequelize = require("sequelize");
 
 // Create an instance of the express app.
  
@@ -28,7 +30,8 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Routes
-// =============================================================
+require("./routes/api-routes.js")(app);
+
 app.get("/", function(req, res) {
 
   res.render("index");
@@ -44,8 +47,8 @@ app.get("/", function(req, res) {
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
-//db.sequelize.sync({ force: true }).then(function() {
+db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
-//});
+});

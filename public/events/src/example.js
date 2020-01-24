@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     eventLimit: true, // allow "more" link when too many events
     events: [
       {
-        title: 'Lost Planet',
+        title: 'Lost Planetdrgsfghsfghsfsfgsfgsdgrsgrsrgsghds',
         start: todayDate
       },
       {
