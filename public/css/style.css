@@ -125,6 +125,14 @@ a {
   display: flex;
   flex-flow: row wrap;
 }
+/* editing side bar for up coimg events Meysam*/
+#sideevents{
+  font-weight: bold ;
+}
+#events{
+  color: red;
+}
+/* ............................... */
 main {
   flex: 1 1 auto;  
   display: flex;
@@ -228,6 +236,9 @@ footer {
   }
 }
 @media only screen and (max-width: 568px) {
+  #imagesidebar{
+    display: none;
+  }
   main {
     font-size: 5em
   }
@@ -271,6 +282,7 @@ footer {
   }
 }
 @media only screen and (max-width: 480px) {
+ 
   .navbar a {
     float: none;
     width: 100%;
