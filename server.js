@@ -30,10 +30,11 @@ app.use(express.static("public"));
 // Routes
 // =============================================================
 app.get("/", function(req, res) {
-
   res.render("index");
 });
-  
+app.get("/contact", function(req, res) {
+  res.render("layouts/contact")
+});
  
 
 
