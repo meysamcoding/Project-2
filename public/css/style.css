@@ -503,5 +503,7 @@ input.admin_input{
 }
 .contact{
   background-color: white;
+  z-index: -2;
+  padding-bottom:150px;
 }
 
