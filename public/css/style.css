@@ -22,11 +22,11 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-<<<<<<< HEAD
+
   margin-bottom: 0px;
-=======
+
   z-index: 2;
->>>>>>> dd2d3d5b3f696487681a774e0e68fc1600982dd9
+
 }
 
 /* Style the navigation bar links */
@@ -448,7 +448,7 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-<<<<<<< HEAD
+
 
 /* Front Page */
 .main {
@@ -472,7 +472,7 @@ input[type=submit]:hover {
 #calendar {
   
 }
-=======
+
 /* Contact Page */
 .contact p{
   font-size: 20px;
@@ -530,4 +530,3 @@ input.admin_input{
   padding-bottom:150px;
 }
 
->>>>>>> dd2d3d5b3f696487681a774e0e68fc1600982dd9
