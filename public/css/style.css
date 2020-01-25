@@ -4,9 +4,10 @@
 /* Header/logo Title */
 .header {
   background-image: url('../img/lostplanetgameslogo.jpg');
-  padding: 80px;
+  padding: 150px;
   text-align: center;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Increase the font size of the heading */
@@ -21,7 +22,11 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  /* z-index: 2; */
+
+  margin-bottom: 0px;
+
+  z-index: 2;
+
 }
 
 /* Style the navigation bar links */
@@ -64,7 +69,7 @@
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: #f1f1f1;
+  background-color: black;
   padding: 20px;
 }
 
@@ -415,14 +420,6 @@ footer {
   from {opacity: .4}
   to {opacity: 1}
 }
-.sidebar {
-  position: absolute;
-  display: inline-block;
-}
-.gallery {
-  background-color: #666;
-  color: white;
-}
 
 /* Contact Page */
 input[type=text], select, textarea {
@@ -451,6 +448,31 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+
+/* Front Page */
+.main {
+  background-color: black;
+  color: white;
+}
+.sidebar {
+  position: absolute;
+  display: inline-block;
+}
+.gallery {
+  background-color:black;
+  color: white;
+}
+.row {
+  background-color: black;
+  color: white;
+}
+
+/* Events Page */
+#calendar {
+  
+}
+
 /* Contact Page */
 .contact p{
   font-size: 20px;
