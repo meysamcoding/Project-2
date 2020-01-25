@@ -33,10 +33,14 @@ app.use(express.static("public"));
 require("./routes/api-routes.js")(app);
 
 app.get("/", function(req, res) {
-
   res.render("index");
 });
-  
+app.get("/contact", function(req, res) {
+  res.render("layouts/contact")
+});
+app.get("/about", function(req, res) {
+  res.render("layouts/about")
+});
  
 
 
