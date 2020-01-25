@@ -1,2 +1,2 @@
-
+DROP DATABASE IF EXISTS `user`;
 CREATE DATABASE `user`;
