@@ -1,10 +1,9 @@
 {
   "name": "fullcalendar-webpack-example",
   "version": "1.0.0",
-  "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fullcalendar/webpack-example.git"
+    "url": "git+https://github.com/fullcalendar/webpack-example.git"
   },
   "main": "dist/example.js",
   "dependencies": {
@@ -25,5 +24,10 @@
     "clean": "rm -rf dist"
   },
   "author": "Adam Shaw <arshaw@arshaw.com> (http://arshaw.com/)",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fullcalendar/webpack-example/issues"
+  },
+  "homepage": "https://github.com/fullcalendar/webpack-example#readme",
+  "description": ""
 }
