@@ -4,9 +4,10 @@
 /* Header/logo Title */
 .header {
   background-image: url('../img/lostplanetgameslogo.jpg');
-  padding: 80px;
+  padding: 150px;
   text-align: center;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Increase the font size of the heading */
@@ -21,6 +22,11 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+
+  margin-bottom: 0px;
+
+  z-index: 2;
+
 }
 
 /* Style the navigation bar links */
@@ -63,7 +69,7 @@
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: #f1f1f1;
+  background-color: black;
   padding: 20px;
 }
 
@@ -125,6 +131,14 @@ a {
   display: flex;
   flex-flow: row wrap;
 }
+/* editing side bar for up coimg events Meysam*/
+#sideevents{
+  font-weight: bold ;
+}
+#events{
+  color: red;
+}
+/* ............................... */
 main {
   flex: 1 1 auto;  
   display: flex;
@@ -228,6 +242,9 @@ footer {
   }
 }
 @media only screen and (max-width: 568px) {
+  #imagesidebar{
+    display: none;
+  }
   main {
     font-size: 5em
   }
@@ -271,6 +288,7 @@ footer {
   }
 }
 @media only screen and (max-width: 480px) {
+ 
   .navbar a {
     float: none;
     width: 100%;
@@ -402,14 +420,6 @@ footer {
   from {opacity: .4}
   to {opacity: 1}
 }
-.sidebar {
-  position: absolute;
-  display: inline-block;
-}
-.gallery {
-  background-color: #666;
-  color: white;
-}
 
 /* Contact Page */
 input[type=text], select, textarea {
@@ -437,4 +447,128 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+
+/* Front Page */
+.main {
+  background-color: black;
+  color: white;
+}
+.sidebar {
+  position: absolute;
+  display: inline-block;
+}
+.gallery {
+  background-color:black;
+  color: white;
+}
+.row {
+  background-color: black;
+  color: white;
+}
+
+/* Events Page */
+#calendar {
+  
+}
+
+/* Contact Page */
+.contact p{
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.contact_p{
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+input.contact_input,
+input.admin_input{
+  font-size: 23px;
+  line-height: 1.3;
+  height: 50px;
+}
+.contact{
+  padding-bottom:30px;
+}
+.contact_info{
+  margin: 100px auto;
+}
+#admin{
+  float: right;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+.adm_login_p{
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.adm_login {
+  width: 240px;
+  margin: 100px auto;
+}
+#user-submit,
+#submit_login{
+  margin-top:20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background-color: black;
+}
+#user-submit{
+  margin-top: 0;
+}
+#DB{
+  margin-top: 80px;
+}
+.contact{
+  background-color: white;
+  padding-bottom:150px;
+}
+
+/* About page */
+
+
+/* Header/Blog Title */
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+
+/* Add a card effect for articles */
+.card {
+  background-color: darkgrey;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
