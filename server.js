@@ -3,13 +3,6 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const db = require("./models");
 const sequelize = require("sequelize");
-
-// Create an instance of the express app.
- 
-
-
-// Sets up the Express App
-// =============================================================
 var app = express();
 var PORT = process.env.PORT || 8080;
 
@@ -20,8 +13,6 @@ app.engine('handlebars', exphbs({
     defaultLayout: 'main'
 }));
 app.set("view engine", "handlebars");
-
-
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -41,14 +32,6 @@ app.get("/contact", function(req, res) {
 app.get("/about", function(req, res) {
   res.render("layouts/about")
 });
- 
-
-
-
-// Here we introduce HTML routing to serve different HTML files
- 
-
-
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync({ force: true }).then(function() {
