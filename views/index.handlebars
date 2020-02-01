@@ -44,35 +44,14 @@
       <!-- Slideshow container -->
       <div class="slideshow-container">
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 5</div>
-          <img src="img/gallery.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 5</div>
-          <img src="img/gallery-img3.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 5</div>
-          <img src="img/IMG_20200106_160300_514.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 5</div>
-          <img src="img/gallery1.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">5 / 5</div>
-          <img src="img/gallery-img2.jpg" style="width:100%">
+        <div class="w3-content w3-section" style="max-width:500px">
+          <img class="mySlides w3-animate-top" src="img/gallery.jpg" style="width:100%">
+          <img class="mySlides w3-animate-bottom" src="img/gallery-img3.jpg" style="width:100%">
+          <img class="mySlides w3-animate-top" src="img/IMG_20200106_160300_514.jpg" style="width:100%">
+          <img class="mySlides w3-animate-bottom" src="img/gallery1.jpg" style="width:100%">
         </div>
 
         <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br>
 
@@ -111,7 +90,7 @@
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+    setTimeout(showSlides, 2500); // Change image every 3 seconds
   }
 </script>
 
