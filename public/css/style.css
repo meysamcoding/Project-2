@@ -221,6 +221,9 @@ footer {
   display: inline;
   font-style: normal
 }
+.flex-rw {
+  color:#337ab7;
+}
 @media only screen and (max-width: 768px) {
   .row {   
     flex-direction: column;
