@@ -14,17 +14,13 @@
   "engine": {
     "node": "12.13.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "dev": "webpack-dev-server --devtool eval --content-base build/ --colors --hot",
-    "postinstall": "webpack -p --config webpack.prod.config.js --progress"
-  },
-  "keywords": [
-    "example",
-    "heroku"
-  ],
+    
+  },  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/meysamcoding/Project-2.git"
