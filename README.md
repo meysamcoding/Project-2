@@ -1,5 +1,9 @@
 # Project 2 - Lost Planet Website
 
+collaborator: Meysam Najafi, Hakob Muradinan, Chris , Cathrine
+
+Langugaes: HTML,CSS, Javascript, Jquery,
+
 This project is a website for the hobby store, Lost Planet by Mike Mandzark. The main purpose of this project is to create a website that will advertise Mike's hobby store and its main attraction which is Warframe Warhammer 40k. One of the problems Mike has is that his hobby store is in a very obscure location that can be quite difficult to find because Google Maps leads people through the wrong way to his hobby store. Our application will combat that problem and will allows users to find this store with accurate information and with no difficulty. Most importantly we will make it simple and easy to edit for Mike to add/subtract any content and information he desires.
 The website will contain:
 
